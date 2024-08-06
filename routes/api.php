@@ -13,6 +13,12 @@ Route::get('/anime/genres', [AnimeController::class, 'genres']);
 Route::get('/anime/genres/{genre_id}/{genre_name?}', [AnimeController::class, 'indexApi']);
 
 
+//dnd
+Route::get('/races', function(){
+
+});
+
+
 // Route::get('/anime/genres/{genre_id}/{genre_name?}', function ($genre_id, $genre_name = NULL) {
 //     //query strings
 //     $animes = Http::get(

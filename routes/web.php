@@ -40,7 +40,7 @@ Route::get('/subclasses/{class}', function ($class) {
     // $url = Http::get('https://www.dnd5eapi.co/api/classes/'.$class.'/subclasses')->json()['results'][0]['url'];
     // $subclass = Http::get('https://www.dnd5eapi.co'.$url)->json();
     // dd($subclass);
-    dd($class);
+    // dd($class);
     $subclass = Http::get('https://www.dnd5eapi.co/api/subclasses/' . $class)->json();
     dd($subclass);
     return view('dnd.subclass', compact('subclass'));
